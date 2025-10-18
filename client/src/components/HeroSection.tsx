@@ -5,64 +5,64 @@ import { Link } from "wouter";
 
 export default function HeroSection() {
   return (
-    <section className="h-[calc(100vh-240px)] flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto text-center space-y-6 animate-fade-in">
-        <div className="flex justify-center mb-4">
+    <section className="flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-14 pb-32">
+      <div className="max-w-4xl mx-auto text-center space-y-4 animate-fade-in">
+        <div className="flex justify-center mb-2">
           <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-primary/20 blur-2xl"></div>
+            <div className="absolute inset-0 rounded-full bg-primary/20 blur-xl"></div>
             <img
               src={rishaImage}
               alt="Risha Batra"
-              className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-primary/30"
+              className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-primary/30"
               data-testid="img-profile"
             />
           </div>
         </div>
 
         <div className="space-y-1">
-          <div className="flex items-center justify-center gap-2 text-muted-foreground mb-2">
-            <Shield className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Risha Batra</span>
+          <div className="flex items-center justify-center gap-2 text-muted-foreground mb-1">
+            <Shield className="w-3.5 h-3.5 text-primary" />
+            <span className="text-xs font-medium">Risha Batra</span>
           </div>
           
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
-            <span className="bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight">
+            <span className="text-foreground">
               From threats to <span className="text-primary">defense</span>,
             </span>
           </h1>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
-            <span className="bg-gradient-to-r from-foreground to-foreground bg-clip-text text-transparent">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight">
+            <span className="text-foreground">
               I turn <span className="text-primary">vulnerabilities</span> into
             </span>
           </h1>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight">
             <span className="text-primary">fortified systems.</span>
           </h1>
         </div>
 
-        <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xs sm:text-sm text-muted-foreground max-w-xl mx-auto leading-relaxed pt-2">
           Cybersecurity enthusiast with experience in <span className="text-foreground font-semibold">OSINT investigations</span>, 
           <span className="text-foreground font-semibold"> vulnerability assessment</span>, and 
           <span className="text-foreground font-semibold"> incident response</span>. 
           Passionate about securing systems and solving real-world security challenges.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 pt-3">
           <Link href="/projects">
             <Button 
-              size="default" 
-              className="group px-6"
+              size="sm" 
+              className="group px-5"
               data-testid="button-view-projects"
             >
               View Projects
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
           <Link href="/contact">
             <Button 
-              size="default" 
+              size="sm" 
               variant="outline" 
-              className="px-6"
+              className="px-5"
               data-testid="button-contact"
             >
               Contact Me

@@ -35,15 +35,15 @@ export default function TechStackCarousel() {
   const duplicatedItems = [...techItems, ...techItems];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 w-full overflow-hidden py-6 bg-gradient-to-b from-transparent via-background/95 to-background">
-      <div className="flex flex-col gap-4">
+    <div className="fixed bottom-0 left-0 right-0 w-full overflow-hidden py-4 bg-gradient-to-b from-transparent via-background/90 to-background pointer-events-none">
+      <div className="flex flex-col gap-3">
         <div className="flex animate-scroll">
           {duplicatedItems.map((item, index) => (
             <div
               key={`row1-${index}`}
-              className="flex items-center gap-2 px-4 py-2 mx-1.5 bg-card/50 border border-card-border rounded-md backdrop-blur-sm whitespace-nowrap min-w-fit"
+              className="flex items-center gap-2 px-3 py-1.5 mx-1 bg-card/40 border border-card-border/50 rounded-md backdrop-blur-sm whitespace-nowrap min-w-fit"
             >
-              <item.Icon className="w-4 h-4 text-primary" />
+              <item.Icon className="w-3.5 h-3.5 text-primary" />
               <span className="text-xs font-medium text-foreground">{item.name}</span>
             </div>
           ))}
@@ -53,9 +53,9 @@ export default function TechStackCarousel() {
           {duplicatedItems.map((item, index) => (
             <div
               key={`row2-${index}`}
-              className="flex items-center gap-2 px-4 py-2 mx-1.5 bg-card/50 border border-card-border rounded-md backdrop-blur-sm whitespace-nowrap min-w-fit"
+              className="flex items-center gap-2 px-3 py-1.5 mx-1 bg-card/40 border border-card-border/50 rounded-md backdrop-blur-sm whitespace-nowrap min-w-fit"
             >
-              <item.Icon className="w-4 h-4 text-primary" />
+              <item.Icon className="w-3.5 h-3.5 text-primary" />
               <span className="text-xs font-medium text-foreground">{item.name}</span>
             </div>
           ))}
