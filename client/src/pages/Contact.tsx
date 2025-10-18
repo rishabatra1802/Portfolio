@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, ExternalLink } from "lucide-react";
+import { Mail, MapPin, ExternalLink } from "lucide-react";
 import { SiLinkedin, SiGithub, SiTryhackme } from "react-icons/si";
 
 const contactInfo = [
@@ -12,15 +12,9 @@ const contactInfo = [
     href: "mailto:risha.26154@ggnindia.dronacharya.info",
   },
   {
-    icon: Phone,
-    label: "Phone",
-    value: "+91 9414882991",
-    href: "tel:+919414882991",
-  },
-  {
     icon: MapPin,
     label: "Location",
-    value: "Gurgaon, India",
+    value: "Delhi, India",
   },
 ];
 

@@ -3,6 +3,10 @@ import CertificationCard from "@/components/CertificationCard";
 
 const certifications = [
   {
+    name: "DevSecOps Learning",
+    issuer: "TryHackMe",
+  },
+  {
     name: "Linux (LFS101)",
     issuer: "The Linux Foundation",
   },
