@@ -4,7 +4,7 @@ import TechStackCarousel from "@/components/TechStackCarousel";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="h-screen overflow-hidden bg-background">
       <Navbar />
       <HeroSection />
       <TechStackCarousel />

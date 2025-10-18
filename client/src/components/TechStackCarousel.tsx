@@ -35,16 +35,16 @@ export default function TechStackCarousel() {
   const duplicatedItems = [...techItems, ...techItems];
 
   return (
-    <div className="w-full overflow-hidden py-12 bg-gradient-to-b from-background via-card/20 to-background">
-      <div className="flex flex-col gap-6">
+    <div className="fixed bottom-0 left-0 right-0 w-full overflow-hidden py-6 bg-gradient-to-b from-transparent via-background/95 to-background">
+      <div className="flex flex-col gap-4">
         <div className="flex animate-scroll">
           {duplicatedItems.map((item, index) => (
             <div
               key={`row1-${index}`}
-              className="flex items-center gap-3 px-6 py-3 mx-2 bg-card/50 border border-card-border rounded-md backdrop-blur-sm whitespace-nowrap min-w-fit"
+              className="flex items-center gap-2 px-4 py-2 mx-1.5 bg-card/50 border border-card-border rounded-md backdrop-blur-sm whitespace-nowrap min-w-fit"
             >
-              <item.Icon className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium text-foreground">{item.name}</span>
+              <item.Icon className="w-4 h-4 text-primary" />
+              <span className="text-xs font-medium text-foreground">{item.name}</span>
             </div>
           ))}
         </div>
@@ -53,10 +53,10 @@ export default function TechStackCarousel() {
           {duplicatedItems.map((item, index) => (
             <div
               key={`row2-${index}`}
-              className="flex items-center gap-3 px-6 py-3 mx-2 bg-card/50 border border-card-border rounded-md backdrop-blur-sm whitespace-nowrap min-w-fit"
+              className="flex items-center gap-2 px-4 py-2 mx-1.5 bg-card/50 border border-card-border rounded-md backdrop-blur-sm whitespace-nowrap min-w-fit"
             >
-              <item.Icon className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium text-foreground">{item.name}</span>
+              <item.Icon className="w-4 h-4 text-primary" />
+              <span className="text-xs font-medium text-foreground">{item.name}</span>
             </div>
           ))}
         </div>
