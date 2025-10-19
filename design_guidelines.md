@@ -38,7 +38,7 @@
 **Hero Section**
 - Circular profile image (Risha's photo) with subtle glow/border effect
 - Large heading: "Risha Batra"
-- Tagline: "From threats to defense, I turn vulnerabilities into fortified systems." (cybersecurity adaptation)
+- Tagline: "Learning to protect what connects us." (cybersecurity adaptation)
 - Bio paragraph highlighting cybersecurity focus: OSINT, vulnerability assessment, incident response
 - Two CTA buttons: "View Projects →" and "Contact Me →"
 
